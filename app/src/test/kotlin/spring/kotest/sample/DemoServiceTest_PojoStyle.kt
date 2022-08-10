@@ -6,7 +6,8 @@ import io.mockk.CapturingSlot
 import io.mockk.mockk
 import io.mockk.verify
 
-class DemoServiceFullyPojoTest : BehaviorSpec({
+@Suppress("ClassName")
+class DemoServiceTest_PojoStyle : BehaviorSpec({
 
     val printService = mockk<PrintService>(
         relaxed = true // https://mockk.io/#relaxed-mock
